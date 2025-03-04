@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -20,7 +21,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   animation = 'fade',
   tag: Tag = 'div'
 }) => {
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!elementRef.current) return;
@@ -73,16 +74,14 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
     };
   }, [animation, delay, once, threshold]);
 
-  return (
-    <Tag
-      ref={elementRef}
-      className={cn(
-        'opacity-0 transform',
-        className
-      )}
-    >
-      {text}
-    </Tag>
+  // Create the element with the specified tag
+  return React.createElement(
+    Tag,
+    {
+      ref: elementRef,
+      className: cn('opacity-0 transform', className)
+    },
+    text
   );
 };
 

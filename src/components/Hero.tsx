@@ -1,10 +1,9 @@
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedText from './AnimatedText';
 
 const Hero: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
   
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,36 +13,18 @@ const Hero: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Parallax effect on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollValue = window.scrollY;
-      if (videoRef.current) {
-        videoRef.current.style.transform = `translateY(${scrollValue * 0.2}px)`;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+      {/* Image Background */}
       <div className="absolute inset-0 h-full w-full">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="object-cover object-center h-[120%] w-full"
-          poster="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=2075"
-        >
-          <source src="https://st.depositphotos.com/4752911/56936/v/600/depositphotos_569366952-stock-video-aerial-panorama-buildings-luxury-residency.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="relative h-full w-full">
+          <img 
+            src="/lovable-uploads/8aca0879-7d7c-40ed-b5d6-423cfbb79611.png" 
+            alt="The View Preston Building" 
+            className="object-cover object-center h-full w-full"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        </div>
       </div>
 
       {/* Content */}
