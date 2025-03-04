@@ -21,7 +21,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   animation = 'fade',
   tag = 'div'
 }) => {
-  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (!elementRef.current) return;
@@ -74,18 +74,18 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
     };
   }, [animation, delay, once, threshold]);
 
-  const TagName = tag as keyof JSX.IntrinsicElements;
+  const Component = tag as keyof JSX.IntrinsicElements;
 
   return (
-    <TagName
-      ref={elementRef}
+    <Component
+      ref={elementRef as React.RefObject<any>}
       className={cn(
         'opacity-0 transform',
         className
       )}
     >
       {text}
-    </TagName>
+    </Component>
   );
 };
 

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedText from './AnimatedText';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
