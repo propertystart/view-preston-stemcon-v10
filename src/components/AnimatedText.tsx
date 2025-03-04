@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -9,7 +8,7 @@ interface AnimatedTextProps {
   threshold?: number;
   delay?: number;
   animation?: 'fade' | 'slide-up' | 'slide-down' | 'slide-left' | 'slide-right';
-  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span' | 'div';
+  tag?: keyof JSX.IntrinsicElements;
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
@@ -19,7 +18,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   threshold = 0.1,
   delay = 0,
   animation = 'fade',
-  tag = 'div'
+  tag: Tag = 'div'
 }) => {
   const elementRef = useRef<HTMLElement>(null);
 
@@ -74,18 +73,16 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
     };
   }, [animation, delay, once, threshold]);
 
-  const Component = tag as keyof JSX.IntrinsicElements;
-
   return (
-    <Component
-      ref={elementRef as React.RefObject<any>}
+    <Tag
+      ref={elementRef}
       className={cn(
         'opacity-0 transform',
         className
       )}
     >
       {text}
-    </Component>
+    </Tag>
   );
 };
 
