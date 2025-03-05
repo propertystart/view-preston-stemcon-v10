@@ -66,27 +66,7 @@ const Contact: React.FC = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white shadow-sm border border-gray-100 rounded-sm p-8">
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-luxury"></div>
-                  </div>
-                  <div className="ml-4">
-                    <p className="text-sm font-medium text-gray-900">Visit Our Display Suite</p>
-                    <p className="text-sm text-gray-600 mt-1">123 Preston Avenue, Preston</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-luxury"></div>
-                  </div>
-                  <div className="ml-4">
-                    <p className="text-sm font-medium text-gray-900">Opening Hours</p>
-                    <p className="text-sm text-gray-600 mt-1">Mon - Fri: 9am - 5pm<br />Sat - Sun: 10am - 4pm</p>
-                  </div>
-                </div>
-                
+              <div className="space-y-6">                
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-6 w-6 flex items-center justify-center">
                     <div className="w-2 h-2 rounded-full bg-luxury"></div>
