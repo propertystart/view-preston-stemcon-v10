@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import AnimatedText from './AnimatedText';
 import ImageReveal from './ImageReveal';
 
-type GalleryCategory = 'all' | 'exterior' | 'interior' | 'amenities' | 'kitchens';
+type GalleryCategory = 'all' | 'exterior' | 'amenities' | 'kitchens';
 
 interface GalleryItem {
   id: number;
@@ -25,9 +25,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=2070",
-      alt: "Luxury living room with city view",
-      category: "interior"
+      src: "/lovable-uploads/0ef9a1d7-761e-47eb-8aa5-fb910f51d7b5.png",
+      alt: "Luxury kitchen with timber cabinetry and city view",
+      category: "kitchens"
     },
     {
       id: 3,
@@ -37,9 +37,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=2070",
-      alt: "Modern bathroom design",
-      category: "interior"
+      src: "/lovable-uploads/7023f75a-7f82-4dab-901d-fc15d744bba2.png",
+      alt: "Modern kitchen with island and dining area",
+      category: "kitchens"
     },
     {
       id: 5,
@@ -52,18 +52,6 @@ const Gallery: React.FC = () => {
       src: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&q=80&w=2074",
       alt: "Fitness center",
       category: "amenities"
-    },
-    {
-      id: 7,
-      src: "/lovable-uploads/ca40ad0e-ef11-4634-8266-0b2a0b799f05.png",
-      alt: "Modern kitchen with timber cabinetry and white countertops",
-      category: "kitchens"
-    },
-    {
-      id: 8,
-      src: "/lovable-uploads/dccb984d-a5f7-4125-98e7-831447a14c6f.png",
-      alt: "Contemporary kitchen with island and dining area",
-      category: "kitchens"
     }
   ];
 
@@ -119,7 +107,7 @@ const Gallery: React.FC = () => {
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
-          {['all', 'exterior', 'interior', 'amenities', 'kitchens'].map((category) => (
+          {['all', 'exterior', 'kitchens', 'amenities'].map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category as GalleryCategory)}
