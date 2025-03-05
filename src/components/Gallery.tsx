@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import AnimatedText from './AnimatedText';
 import ImageReveal from './ImageReveal';
 
-type GalleryCategory = 'all' | 'exterior' | 'amenities' | 'kitchens';
+type GalleryCategory = 'all' | 'exterior' | 'bedrooms' | 'kitchens';
 
 interface GalleryItem {
   id: number;
@@ -31,9 +31,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&q=80&w=2070",
-      alt: "Rooftop pool amenity",
-      category: "amenities"
+      src: "/lovable-uploads/a325c6c9-52f1-4c4d-adc6-5c56e6921288.png",
+      alt: "Master bedroom with city views and private balcony",
+      category: "bedrooms"
     },
     {
       id: 4,
@@ -49,9 +49,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&q=80&w=2074",
-      alt: "Fitness center",
-      category: "amenities"
+      src: "/lovable-uploads/acb28c92-2a8f-4d68-91a7-02402859602a.png",
+      alt: "Spacious bedroom with ensuite bathroom",
+      category: "bedrooms"
     }
   ];
 
@@ -107,7 +107,7 @@ const Gallery: React.FC = () => {
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
-          {['all', 'exterior', 'kitchens', 'amenities'].map((category) => (
+          {['all', 'exterior', 'kitchens', 'bedrooms'].map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category as GalleryCategory)}
@@ -117,7 +117,11 @@ const Gallery: React.FC = () => {
                   : 'bg-white text-gray-800 hover:bg-gray-100'
               }`}
             >
-              {category === 'kitchens' ? 'Modern Kitchens' : category.charAt(0).toUpperCase() + category.slice(1)}
+              {category === 'kitchens' 
+                ? 'Modern Kitchens' 
+                : category === 'bedrooms'
+                  ? 'Generous Bedrooms'
+                  : category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
           ))}
         </div>
