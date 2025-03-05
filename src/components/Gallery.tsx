@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import AnimatedText from './AnimatedText';
 import ImageReveal from './ImageReveal';
 
-type GalleryCategory = 'all' | 'exterior' | 'interior' | 'amenities';
+type GalleryCategory = 'all' | 'exterior' | 'interior' | 'amenities' | 'kitchens';
 
 interface GalleryItem {
   id: number;
@@ -52,6 +52,18 @@ const Gallery: React.FC = () => {
       src: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&q=80&w=2074",
       alt: "Fitness center",
       category: "amenities"
+    },
+    {
+      id: 7,
+      src: "/lovable-uploads/ca40ad0e-ef11-4634-8266-0b2a0b799f05.png",
+      alt: "Modern kitchen with timber cabinetry and white countertops",
+      category: "kitchens"
+    },
+    {
+      id: 8,
+      src: "/lovable-uploads/dccb984d-a5f7-4125-98e7-831447a14c6f.png",
+      alt: "Contemporary kitchen with island and dining area",
+      category: "kitchens"
     }
   ];
 
@@ -107,7 +119,7 @@ const Gallery: React.FC = () => {
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
-          {['all', 'exterior', 'interior', 'amenities'].map((category) => (
+          {['all', 'exterior', 'interior', 'amenities', 'kitchens'].map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category as GalleryCategory)}
@@ -117,7 +129,7 @@ const Gallery: React.FC = () => {
                   : 'bg-white text-gray-800 hover:bg-gray-100'
               }`}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category === 'kitchens' ? 'Modern Kitchens' : category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
           ))}
         </div>
