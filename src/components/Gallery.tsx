@@ -19,8 +19,8 @@ const Gallery: React.FC = () => {
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      src: "/lovable-uploads/ef2c681d-b9cf-409d-9ae8-0d1d38e7f409.png",
-      alt: "Luxury living room with balcony access and city views",
+      src: "/lovable-uploads/80e2c3cf-f133-47c3-aa79-43906bced854.png",
+      alt: "Contemporary living room with balcony access and city views",
       category: "livingrooms"
     },
     {
@@ -43,8 +43,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 5,
-      src: "/lovable-uploads/45349d6d-bbd8-4263-b715-d5e915ffa12b.png",
-      alt: "Open plan living and dining area with panoramic views",
+      src: "/lovable-uploads/63139a0b-aeac-43fc-84ea-f18c4933c5c4.png",
+      alt: "Open plan living room with kitchen and dining area",
       category: "livingrooms"
     },
     {
@@ -67,8 +67,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 9,
-      src: "/lovable-uploads/6224aacf-3eb1-4feb-a4e2-3df1c210b83a.png",
-      alt: "Spacious living room with multiple seating areas and city view",
+      src: "/lovable-uploads/9523b9dd-0a31-478c-93a6-c98d36c42f85.png",
+      alt: "Spacious balcony with dining table and panoramic city views",
       category: "livingrooms"
     },
     {
