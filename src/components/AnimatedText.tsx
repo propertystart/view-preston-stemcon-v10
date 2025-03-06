@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
 interface AnimatedTextProps {
-  text: string;
+  text: string | React.ReactNode;
   className?: string;
   once?: boolean;
   threshold?: number;
