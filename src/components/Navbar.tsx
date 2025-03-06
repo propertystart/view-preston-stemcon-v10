@@ -39,6 +39,14 @@ const Navbar: React.FC = () => {
     'Contact'
   ];
 
+  // Helper function to create proper anchor links
+  const getAnchorLink = (item: string) => {
+    if (item === 'Fittings & Finishes') {
+      return '#fittings-finishes';
+    }
+    return `#${item.toLowerCase().replace(/\s+/g, '-')}`;
+  };
+
   return (
     <header
       className={cn(
@@ -56,7 +64,7 @@ const Navbar: React.FC = () => {
           {navItems.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+              href={getAnchorLink(item)}
               className="text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200"
             >
               {item}
@@ -96,7 +104,7 @@ const Navbar: React.FC = () => {
             {navItems.map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+                href={getAnchorLink(item)}
                 className="text-xl font-medium text-gray-900 hover:text-black transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
