@@ -115,27 +115,27 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <section id="gallery" className="py-20 md:py-32 bg-gray-50">
+    <section id="gallery" className="py-20 md:py-32 bg-noir-light">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12 md:mb-16">
           <AnimatedText
             text="GALLERY"
             tag="p"
-            className="text-luxury text-sm tracking-widest"
+            className="text-noir-gold text-sm tracking-widest"
             animation="slide-up"
           />
           <AnimatedText
             text="Experience The View Preston"
             tag="h2"
-            className="text-3xl md:text-4xl font-light text-gray-900 tracking-tight mt-3"
+            className="text-3xl md:text-4xl font-light text-white tracking-tight mt-3"
             animation="slide-up"
             delay={100}
           />
-          <div className="h-px w-16 bg-luxury/30 mx-auto mt-6 mb-6"></div>
+          <div className="h-px w-16 bg-noir-gold/30 mx-auto mt-6 mb-6"></div>
           <AnimatedText
             text="Browse our collection of images showcasing the exceptional quality and design of The View Preston."
             tag="p"
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-gray-300 max-w-2xl mx-auto"
             animation="slide-up"
             delay={200}
           />
@@ -149,8 +149,8 @@ const Gallery: React.FC = () => {
               onClick={() => setActiveCategory(category as GalleryCategory)}
               className={`px-4 py-2 text-sm transition-colors duration-300 ${
                 activeCategory === category
-                  ? 'bg-luxury text-white'
-                  : 'bg-white text-gray-800 hover:bg-gray-100'
+                  ? 'bg-noir-gold text-noir-dark'
+                  : 'bg-noir-dark text-white hover:bg-noir-gold/20'
               }`}
             >
               {category === 'kitchens' 
@@ -178,7 +178,7 @@ const Gallery: React.FC = () => {
                 animation="fade"
                 delay={index * 100}
               />
-              <p className="mt-2 text-sm text-gray-600">{item.alt}</p>
+              <p className="mt-2 text-sm text-gray-400">{item.alt}</p>
             </div>
           ))}
         </div>

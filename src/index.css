@@ -145,7 +145,7 @@ html {
 .lazy-img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background-color: #f3f4f6;
+  background-color: #1a1a1a;
 }
 
 .lazy-img.loaded {
@@ -154,18 +154,60 @@ html {
 
 /* Glass Morphism */
 .glass {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(26, 26, 26, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(201, 167, 124, 0.18);
 }
 
 .dark .glass {
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(201, 167, 124, 0.05);
 }
 
 /* Noir Theme */
 .bg-noir {
   background-color: #1a1a1a;
+}
+
+/* Additional Noir Theme Utilities */
+.text-shadow-gold {
+  text-shadow: 0 0 8px rgba(201, 167, 124, 0.3);
+}
+
+.border-gradient {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, rgba(201, 167, 124, 0.1), rgba(201, 167, 124, 0.6), rgba(201, 167, 124, 0.1));
+}
+
+.gold-underline {
+  position: relative;
+}
+
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(201, 167, 124, 0), rgba(201, 167, 124, 1), rgba(201, 167, 124, 0));
+}
+
+/* Button hover effects */
+.btn-noir-gold {
+  @apply px-4 py-2 bg-noir-gold text-noir-dark transition-all duration-300;
+}
+
+.btn-noir-gold:hover {
+  @apply bg-noir-gold2 shadow-lg shadow-noir-gold/20;
+}
+
+.btn-noir-outline {
+  @apply px-4 py-2 border border-noir-gold text-white transition-all duration-300;
+}
+
+.btn-noir-outline:hover {
+  @apply bg-noir-gold text-noir-dark shadow-lg shadow-noir-gold/20;
 }
