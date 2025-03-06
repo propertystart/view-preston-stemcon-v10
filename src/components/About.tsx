@@ -5,7 +5,7 @@ import ImageReveal from './ImageReveal';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto">
+    <section id="about" className="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto bg-noir">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
         <div className="order-2 md:order-1">
           <div className="space-y-6">
@@ -13,29 +13,29 @@ const About: React.FC = () => {
               <AnimatedText
                 text="ABOUT"
                 tag="p"
-                className="text-luxury text-sm tracking-widest"
+                className="text-noir-gold text-sm tracking-widest"
                 animation="slide-up"
               />
             </div>
             <AnimatedText
               text="Timeless Elegance in Preston"
               tag="h2"
-              className="text-3xl md:text-4xl font-light text-gray-900 tracking-tight"
+              className="text-3xl md:text-4xl font-light text-white tracking-tight"
               animation="slide-up"
               delay={100}
             />
-            <div className="h-px w-16 bg-luxury/30"></div>
+            <div className="h-px w-16 bg-noir-gold/50"></div>
             <AnimatedText
               text="The View Preston is a collection of meticulously crafted luxury apartments that redefine modern urban living. Located in the vibrant heart of Preston, this architectural masterpiece offers an unparalleled living experience."
               tag="p"
-              className="text-gray-600 leading-relaxed"
+              className="text-gray-300 leading-relaxed"
               animation="slide-up"
               delay={200}
             />
             <AnimatedText
               text="Every detail has been thoughtfully considered to create homes that are as functional as they are beautiful. From the premium finishes to the intelligent layouts, The View Preston represents the perfect harmony of form and function."
               tag="p"
-              className="text-gray-600 leading-relaxed"
+              className="text-gray-300 leading-relaxed"
               animation="slide-up"
               delay={300}
             />
@@ -43,18 +43,18 @@ const About: React.FC = () => {
               text={
                 <>
                   With over 25 years of quality and innovation in Melbourne, Stemcon and MAP Architects have crafted a development that blends style, functionality, and sustainability. Backed by a{' '}
-                  <span className="font-medium text-luxury-dark bg-luxury/10 px-1.5 py-0.5 rounded">20-year builder's guarantee</span>, it offers enduring quality and peace of mind for modern living.
+                  <span className="font-medium text-noir-gold bg-noir-dark px-3 py-1.5 rounded border border-noir-gold/30">20-year builder's guarantee</span>, it offers enduring quality and peace of mind for modern living.
                 </>
               }
               tag="p"
-              className="text-gray-600 leading-relaxed"
+              className="text-gray-300 leading-relaxed"
               animation="slide-up"
               delay={400}
             />
             <div className="pt-4">
               <a
                 href="#gallery"
-                className="inline-block px-6 py-3 bg-luxury hover:bg-luxury-dark text-white transition-colors duration-300 text-sm"
+                className="inline-block px-6 py-3 bg-noir-gold hover:bg-noir-gold2 text-noir-dark transition-colors duration-300 text-sm font-medium"
               >
                 EXPLORE
               </a>
@@ -70,7 +70,7 @@ const About: React.FC = () => {
               className="rounded-sm overflow-hidden"
               animation="slide-left"
             />
-            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-luxury/10 -z-10 rounded-sm"></div>
+            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-noir-gold/10 -z-10 rounded-sm"></div>
           </div>
         </div>
       </div>

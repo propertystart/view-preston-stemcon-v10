@@ -71,6 +71,15 @@ export default {
 					DEFAULT: '#9a8478',
 					light: '#d4c8c0',
 					dark: '#5d4d41',
+				},
+				noir: {
+					DEFAULT: '#1a1a1a',
+					light: '#333333',
+					dark: '#0f0f0f',
+					gold: '#c9a77c',
+					gold2: '#b38e56',
+					text: '#ffffff',
+					muted: '#999999',
 				}
 			},
 			borderRadius: {
