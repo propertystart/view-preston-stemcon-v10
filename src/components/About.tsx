@@ -39,6 +39,13 @@ const About: React.FC = () => {
               animation="slide-up"
               delay={300}
             />
+            <AnimatedText
+              text="With over 25 years of quality and innovation in Melbourne, Stemcon and MAP Architects have crafted a development that blends style, functionality, and sustainability. Backed by a 20-year builder's guarantee, it offers enduring quality and peace of mind for modern living."
+              tag="p"
+              className="text-gray-600 leading-relaxed"
+              animation="slide-up"
+              delay={400}
+            />
             <div className="pt-4">
               <a
                 href="#gallery"
