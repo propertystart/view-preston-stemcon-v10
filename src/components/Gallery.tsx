@@ -82,6 +82,12 @@ const Gallery: React.FC = () => {
       src: "/lovable-uploads/4ac60df3-cfc9-48e6-aeb3-3b0633908177.png",
       alt: "Modern bedroom with mirrored wardrobe and balcony access",
       category: "bedrooms"
+    },
+    {
+      id: 12,
+      src: "/lovable-uploads/78e68ecf-5336-494e-b55d-225fedca6938.png",
+      alt: "Luxury bathroom with freestanding bath and natural stone tiles",
+      category: "bathrooms"
     }
   ];
 
