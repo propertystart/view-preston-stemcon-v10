@@ -76,6 +76,12 @@ const Gallery: React.FC = () => {
       src: "/lovable-uploads/d82448b0-41a6-46a7-b4d2-e996cd7193e4.png",
       alt: "Contemporary kitchen with timber cabinetry and breakfast bar",
       category: "kitchens"
+    },
+    {
+      id: 11,
+      src: "/lovable-uploads/4ac60df3-cfc9-48e6-aeb3-3b0633908177.png",
+      alt: "Modern bedroom with mirrored wardrobe and balcony access",
+      category: "bedrooms"
     }
   ];
 
