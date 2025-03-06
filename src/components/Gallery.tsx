@@ -31,8 +31,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 3,
-      src: "/lovable-uploads/a325c6c9-52f1-4c4d-adc6-5c56e6921288.png",
-      alt: "Master bedroom with city views and private balcony",
+      src: "/lovable-uploads/a7047f15-3d4a-4d91-865a-4437b365fad6.png",
+      alt: "Master bedroom with mirrored wardrobes and private balcony",
       category: "bedrooms"
     },
     {
@@ -49,8 +49,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 6,
-      src: "/lovable-uploads/acb28c92-2a8f-4d68-91a7-02402859602a.png",
-      alt: "Spacious bedroom with ensuite bathroom",
+      src: "/lovable-uploads/f097e92b-4188-4db5-ab7e-07c733bdb441.png",
+      alt: "Bright bedroom with timber bedside table and city views",
       category: "bedrooms"
     },
     {
@@ -79,8 +79,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 11,
-      src: "/lovable-uploads/4ac60df3-cfc9-48e6-aeb3-3b0633908177.png",
-      alt: "Modern bedroom with mirrored wardrobe and balcony access",
+      src: "/lovable-uploads/85fd1faf-3429-4f5e-9161-ac436fbb0d65.png",
+      alt: "Stylish bedroom with curved fabric bedhead and timber side table",
       category: "bedrooms"
     },
     {
