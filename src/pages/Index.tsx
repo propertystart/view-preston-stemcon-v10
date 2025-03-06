@@ -1,9 +1,11 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Gallery from '@/components/Gallery';
 import FloorPlans from '@/components/FloorPlans';
+import FittingsFinishes from '@/components/FittingsFinishes';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ImageReveal from '@/components/ImageReveal';
@@ -64,6 +66,7 @@ const Index = () => {
       <Hero />
       <About />
       <Gallery />
+      <FittingsFinishes />
       <FloorPlans />
       
       {/* Location Section */}

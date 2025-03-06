@@ -29,6 +29,16 @@ const Navbar: React.FC = () => {
     };
   }, [isMenuOpen]);
 
+  const navItems = [
+    'Home',
+    'About',
+    'Gallery',
+    'Fittings & Finishes',
+    'Floor Plans',
+    'Location',
+    'Contact'
+  ];
+
   return (
     <header
       className={cn(
@@ -43,7 +53,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {['Home', 'About', 'Gallery', 'Floor Plans', 'Location', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
@@ -83,7 +93,7 @@ const Navbar: React.FC = () => {
       >
         <div className="flex flex-col items-center justify-center h-full">
           <div className="flex flex-col space-y-8 items-center">
-            {['Home', 'About', 'Gallery', 'Floor Plans', 'Location', 'Contact'].map((item) => (
+            {navItems.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
