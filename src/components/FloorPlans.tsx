@@ -200,12 +200,6 @@ const FloorPlans: React.FC = () => {
               </div>
             </div>
           </div>
-          
-          <div className="text-center mt-8">
-            <button className="bg-luxury hover:bg-luxury/90 text-white px-8 py-3 font-medium transition-colors">
-              Book a Tour
-            </button>
-          </div>
         </div>
       </div>
     </section>
