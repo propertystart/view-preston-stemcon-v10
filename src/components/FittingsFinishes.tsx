@@ -349,6 +349,22 @@ const FittingsFinishes: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                
+                {/* Detailed Laundry & External Image */}
+                <div className="mt-12">
+                  <div className="border border-gray-200 rounded-md overflow-hidden">
+                    <ImageReveal 
+                      src="/lovable-uploads/cb85fd16-8c63-4b3c-8f5b-6c46c41aea96.png" 
+                      alt="Detailed Laundry & External Specifications"
+                      className="w-full"
+                      aspectRatio="aspect-[2/1]"
+                      animation="fade"
+                    />
+                  </div>
+                  <p className="text-xs text-center text-gray-500 mt-2">
+                    Detailed laundry and external specifications and finishes
+                  </p>
+                </div>
               </div>
             </div>
           </TabsContent>
