@@ -40,7 +40,12 @@ const About: React.FC = () => {
               delay={300}
             />
             <AnimatedText
-              text="With over 25 years of quality and innovation in Melbourne, Stemcon and MAP Architects have crafted a development that blends style, functionality, and sustainability. Backed by a 20-year builder's guarantee, it offers enduring quality and peace of mind for modern living."
+              text={
+                <>
+                  With over 25 years of quality and innovation in Melbourne, Stemcon and MAP Architects have crafted a development that blends style, functionality, and sustainability. Backed by a{' '}
+                  <span className="font-medium text-luxury-dark bg-luxury/10 px-1.5 py-0.5 rounded">20-year builder's guarantee</span>, it offers enduring quality and peace of mind for modern living.
+                </>
+              }
               tag="p"
               className="text-gray-600 leading-relaxed"
               animation="slide-up"
