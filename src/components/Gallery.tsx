@@ -25,8 +25,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 2,
-      src: "/lovable-uploads/0ef9a1d7-761e-47eb-8aa5-fb910f51d7b5.png",
-      alt: "Luxury kitchen with timber cabinetry and city view",
+      src: "/lovable-uploads/2e41f948-430c-4b1c-aa61-d7a74eb2235c.png",
+      alt: "Designer kitchen with timber cabinetry and island dining area",
       category: "kitchens"
     },
     {
@@ -37,8 +37,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 4,
-      src: "/lovable-uploads/7023f75a-7f82-4dab-901d-fc15d744bba2.png",
-      alt: "Modern kitchen with island and dining area",
+      src: "/lovable-uploads/c87b078e-353a-499b-973d-6469d7131fb1.png",
+      alt: "Elegant kitchen with light timber cabinetry and linear lighting",
       category: "kitchens"
     },
     {
@@ -73,8 +73,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 10,
-      src: "/lovable-uploads/d82448b0-41a6-46a7-b4d2-e996cd7193e4.png",
-      alt: "Contemporary kitchen with timber cabinetry and breakfast bar",
+      src: "/lovable-uploads/b24b1501-d71d-4eac-aae3-ed10d3553e15.png",
+      alt: "Minimalist galley kitchen with white countertops and gas cooktop",
       category: "kitchens"
     },
     {
