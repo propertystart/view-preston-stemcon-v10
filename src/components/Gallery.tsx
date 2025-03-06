@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import AnimatedText from './AnimatedText';
 import ImageReveal from './ImageReveal';
 
-type GalleryCategory = 'all' | 'exterior' | 'bedrooms' | 'kitchens' | 'bathrooms';
+type GalleryCategory = 'all' | 'livingrooms' | 'bedrooms' | 'kitchens' | 'bathrooms';
 
 interface GalleryItem {
   id: number;
@@ -19,9 +19,9 @@ const Gallery: React.FC = () => {
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=2835",
-      alt: "Modern apartment exterior",
-      category: "exterior"
+      src: "/lovable-uploads/ef2c681d-b9cf-409d-9ae8-0d1d38e7f409.png",
+      alt: "Luxury living room with balcony access and city views",
+      category: "livingrooms"
     },
     {
       id: 2,
@@ -43,9 +43,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=2787",
-      alt: "Building facade at sunset",
-      category: "exterior"
+      src: "/lovable-uploads/45349d6d-bbd8-4263-b715-d5e915ffa12b.png",
+      alt: "Open plan living and dining area with panoramic views",
+      category: "livingrooms"
     },
     {
       id: 6,
@@ -64,6 +64,12 @@ const Gallery: React.FC = () => {
       src: "/lovable-uploads/57a1ae6e-261a-46f6-938c-5ef4bcfe6806.png",
       alt: "Luxury ensuite with double vanity and freestanding bath",
       category: "bathrooms"
+    },
+    {
+      id: 9,
+      src: "/lovable-uploads/6224aacf-3eb1-4feb-a4e2-3df1c210b83a.png",
+      alt: "Spacious living room with multiple seating areas and city view",
+      category: "livingrooms"
     }
   ];
 
@@ -119,7 +125,7 @@ const Gallery: React.FC = () => {
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
-          {['all', 'exterior', 'kitchens', 'bedrooms', 'bathrooms'].map((category) => (
+          {['all', 'livingrooms', 'kitchens', 'bedrooms', 'bathrooms'].map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category as GalleryCategory)}
@@ -135,7 +141,9 @@ const Gallery: React.FC = () => {
                   ? 'Generous Bedrooms'
                   : category === 'bathrooms'
                     ? 'Modern Bathroom Design'
-                    : category.charAt(0).toUpperCase() + category.slice(1)}
+                    : category === 'livingrooms' 
+                      ? 'Luxury Living Rooms'
+                      : category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
           ))}
         </div>
