@@ -91,13 +91,6 @@ const FittingsFinishes: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Appliances */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Premium quality appliances set" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Appliances</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Premium Quality Appliances Set</p>
@@ -111,13 +104,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Kitchen Sink */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/afd1bbc9-ead4-45db-b3ed-7abc9099e93d.png" 
-                        alt="Undermount sink" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Kitchen Sink</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Undermount Sink</p>
@@ -130,13 +116,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Kitchen Mixer */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/20396ecc-5469-4a9a-a1c4-107ca2c38552.png" 
-                        alt="Tall sink mixer" 
-                        className="w-full h-full object-cover" 
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Kitchen Mixer</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Tall Sink Mixer</p>
@@ -149,13 +128,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Benchtop & Splashback */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/9b0ad4d5-f811-4ede-97e2-63b861406180.png" 
-                        alt="Reconstituted stone benchtop" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Benchtop & Splashback</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Reconstituted Stone</p>
@@ -168,13 +140,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Feature Light */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/9b0ad4d5-f811-4ede-97e2-63b861406180.png" 
-                        alt="LED strip lighting" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Feature Light</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">LED Strip Lighting</p>
@@ -201,13 +166,6 @@ const FittingsFinishes: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Basin / Benchtop */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Round ceramic basin" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Basin / Benchtop</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Round Ceramic</p>
@@ -220,13 +178,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Basin Mixer */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Tall bench-mount basin mixer" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Basin Mixer</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Tall Bench-Mount</p>
@@ -239,13 +190,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Toilet Suite */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Toilet pan with in-wall cistern" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Toilet Suite</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Toilet Pan w/ In-wall Cistern</p>
@@ -272,13 +216,6 @@ const FittingsFinishes: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Timber Floor */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Engineered timber flooring" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Timber Floor (Living)</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Engineered Timber</p>
@@ -291,13 +228,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Carpet Floor */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Plush/textured carpet" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Carpet Floor (Bedroom)</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Plush/Textured</p>
@@ -310,13 +240,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Robe Doors */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Mirror sliding door" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Robe Doors</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Mirror Sliding Door</p>
@@ -343,13 +266,6 @@ const FittingsFinishes: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Laundry Trough */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Drop-in type laundry trough" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Laundry Trough Cabinet</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Drop-in Type</p>
@@ -362,13 +278,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Laundry Mixer */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Swivel laundry faucet" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Laundry Mixer</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Swivel Laundry Faucet</p>
@@ -381,13 +290,6 @@ const FittingsFinishes: React.FC = () => {
                   
                   {/* Window */}
                   <div className="space-y-3">
-                    <div className="aspect-square bg-gray-100 rounded-sm overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/71b3f7a4-8ad4-4f5c-b7b9-8ef52ba9ada6.png" 
-                        alt="Double glazing window" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     <div>
                       <h4 className="text-lg font-medium">Window</h4>
                       <p className="text-sm font-semibold uppercase text-luxury mt-1">Double Glazing</p>
