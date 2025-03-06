@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import AnimatedText from './AnimatedText';
 import { cn } from '@/lib/utils';
@@ -281,6 +282,22 @@ const FittingsFinishes: React.FC = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+                
+                {/* Detailed Living & Bedroom Image */}
+                <div className="mt-12">
+                  <div className="border border-gray-200 rounded-md overflow-hidden">
+                    <ImageReveal 
+                      src="/lovable-uploads/d8f79b2f-2b7e-42ed-88e0-ad294196139e.png" 
+                      alt="Detailed Living & Bedroom Specifications"
+                      className="w-full"
+                      aspectRatio="aspect-[2/1]"
+                      animation="fade"
+                    />
+                  </div>
+                  <p className="text-xs text-center text-gray-500 mt-2">
+                    Detailed living and bedroom specifications and finishes
+                  </p>
                 </div>
               </div>
             </div>
