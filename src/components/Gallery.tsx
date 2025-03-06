@@ -70,6 +70,12 @@ const Gallery: React.FC = () => {
       src: "/lovable-uploads/6224aacf-3eb1-4feb-a4e2-3df1c210b83a.png",
       alt: "Spacious living room with multiple seating areas and city view",
       category: "livingrooms"
+    },
+    {
+      id: 10,
+      src: "/lovable-uploads/d82448b0-41a6-46a7-b4d2-e996cd7193e4.png",
+      alt: "Contemporary kitchen with timber cabinetry and breakfast bar",
+      category: "kitchens"
     }
   ];
 
