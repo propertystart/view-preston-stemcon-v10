@@ -52,8 +52,8 @@ const About: React.FC = () => {
         <div className="order-1 md:order-2">
           <div className="relative">
             <ImageReveal
-              src="/lovable-uploads/0ef9a1d7-761e-47eb-8aa5-fb910f51d7b5.png"
-              alt="Luxurious apartment interior with city views"
+              src="/lovable-uploads/df78c313-2699-4223-88ed-454d92507606.png"
+              alt="Modern apartment living room with balcony view"
               aspectRatio="aspect-[3/4]"
               className="rounded-sm overflow-hidden"
               animation="slide-left"
