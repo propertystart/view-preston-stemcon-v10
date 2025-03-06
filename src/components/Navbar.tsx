@@ -43,10 +43,10 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {['Home', 'About', 'Gallery', 'Location', 'Contact'].map((item) => (
+          {['Home', 'About', 'Gallery', 'Floor Plans', 'Location', 'Contact'].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
               className="text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200"
             >
               {item}
@@ -83,10 +83,10 @@ const Navbar: React.FC = () => {
       >
         <div className="flex flex-col items-center justify-center h-full">
           <div className="flex flex-col space-y-8 items-center">
-            {['Home', 'About', 'Gallery', 'Location', 'Contact'].map((item) => (
+            {['Home', 'About', 'Gallery', 'Floor Plans', 'Location', 'Contact'].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-xl font-medium text-gray-900 hover:text-black transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
