@@ -55,14 +55,14 @@ const Gallery: React.FC = () => {
     },
     {
       id: 7,
-      src: "/lovable-uploads/cc69496e-22fd-4111-baba-f384d769677f.png",
-      alt: "Elegant bathroom with vessel sink and fluted glass shower",
+      src: "/lovable-uploads/dc9890f1-5bcb-400c-956a-286c8464edd4.png",
+      alt: "Elegant bathroom with natural stone walls and fluted glass shower",
       category: "bathrooms"
     },
     {
       id: 8,
-      src: "/lovable-uploads/57a1ae6e-261a-46f6-938c-5ef4bcfe6806.png",
-      alt: "Luxury ensuite with double vanity and freestanding bath",
+      src: "/lovable-uploads/650e14e6-5c16-4ac5-951c-4162244516cb.png",
+      alt: "Luxury ensuite with double vessel sinks and backlit mirror",
       category: "bathrooms"
     },
     {
@@ -85,8 +85,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 12,
-      src: "/lovable-uploads/78e68ecf-5336-494e-b55d-225fedca6938.png",
-      alt: "Luxury bathroom with freestanding bath and natural stone tiles",
+      src: "/lovable-uploads/46c2d0b0-a244-42de-ad1f-c5e739188d59.png",
+      alt: "Contemporary bathroom with freestanding bath and rainfall shower",
       category: "bathrooms"
     }
   ];
