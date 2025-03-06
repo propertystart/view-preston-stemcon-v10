@@ -4,6 +4,7 @@ import AnimatedText from './AnimatedText';
 import { cn } from '@/lib/utils';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PaletteIcon } from 'lucide-react';
+import ImageReveal from './ImageReveal';
 
 type RoomType = 'kitchen' | 'bathroom' | 'living' | 'laundry';
 
@@ -149,6 +150,22 @@ const FittingsFinishes: React.FC = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+                
+                {/* Detailed Kitchen Image */}
+                <div className="mt-12">
+                  <div className="border border-gray-200 rounded-md overflow-hidden">
+                    <ImageReveal 
+                      src="/lovable-uploads/d3feac66-49b1-4345-8401-0a6f91519e8b.png" 
+                      alt="Detailed Kitchen Specifications"
+                      className="w-full"
+                      aspectRatio="aspect-[2/1]"
+                      animation="fade"
+                    />
+                  </div>
+                  <p className="text-xs text-center text-gray-500 mt-2">
+                    Detailed kitchen specifications and finishes
+                  </p>
                 </div>
               </div>
             </div>
