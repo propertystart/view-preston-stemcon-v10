@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           <AnimatedText
             text="BY STEMCON"
             tag="p"
-            className="text-primary text-base md:text-lg lg:text-xl tracking-widest mb-8"
+            className="text-white text-base md:text-lg lg:text-xl tracking-widest mb-8"
             animation="slide-up"
             delay={400}
           />
