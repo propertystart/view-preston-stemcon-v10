@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             <a
               key={item}
               href={getAnchorLink(item)}
-              className="text-sm font-medium text-gray-300 hover:text-noir-gold transition-colors duration-200"
+              className="text-sm font-medium text-white hover:text-noir-gold transition-colors duration-200"
             >
               {item}
             </a>
