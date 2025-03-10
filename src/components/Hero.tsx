@@ -22,6 +22,8 @@ const Hero: React.FC = () => {
             alt="The View Preston Building" 
             className="object-cover object-center h-full w-full"
           />
+          {/* Semi-transparent overlay to make the image darker */}
+          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         </div>
       </div>
     </section>
