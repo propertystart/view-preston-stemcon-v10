@@ -22,7 +22,6 @@ const Hero: React.FC = () => {
             alt="The View Preston Building" 
             className="object-cover object-center h-full w-full"
           />
-          <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
         </div>
       </div>
     </section>
