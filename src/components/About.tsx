@@ -2,8 +2,24 @@
 import React from 'react';
 import AnimatedText from './AnimatedText';
 import ImageReveal from './ImageReveal';
+import ImageCarousel from './ImageCarousel';
 
 const About: React.FC = () => {
+  const carouselImages = [
+    {
+      src: "/lovable-uploads/df78c313-2699-4223-88ed-454d92507606.png",
+      alt: "Modern apartment living room with balcony view"
+    },
+    {
+      src: "/lovable-uploads/7dfda104-d232-43a8-bfbd-429458b07f63.png",
+      alt: "Modern kitchen and dining area with wooden finishes"
+    },
+    {
+      src: "/lovable-uploads/27e1b090-8277-4a4d-bb22-1a29a0d42a39.png",
+      alt: "Balcony with outdoor dining and city skyline view"
+    }
+  ];
+
   return (
     <section id="about" className="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto bg-noir">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-center">
@@ -64,12 +80,16 @@ const About: React.FC = () => {
         <div className="order-1 md:order-2 md:col-span-7">
           <div className="relative">
             <ImageReveal
-              src="/lovable-uploads/df78c313-2699-4223-88ed-454d92507606.png"
-              alt="Modern apartment living room with balcony view"
-              aspectRatio="aspect-[4/3]"
-              className="rounded-sm overflow-hidden"
               animation="slide-left"
-            />
+              className="rounded-sm overflow-hidden"
+            >
+              <ImageCarousel 
+                images={carouselImages}
+                interval={6000}
+                aspectRatio="aspect-[4/3]"
+                className="rounded-sm overflow-hidden"
+              />
+            </ImageReveal>
             <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-noir-gold/10 -z-10 rounded-sm"></div>
           </div>
         </div>

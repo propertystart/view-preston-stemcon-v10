@@ -1,16 +1,17 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 interface ImageRevealProps {
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
   className?: string;
   aspectRatio?: string;
   once?: boolean;
   threshold?: number;
   delay?: number;
   animation?: 'fade' | 'slide-up' | 'slide-down' | 'slide-left' | 'slide-right';
+  children?: ReactNode;
 }
 
 const ImageReveal: React.FC<ImageRevealProps> = ({
@@ -21,20 +22,21 @@ const ImageReveal: React.FC<ImageRevealProps> = ({
   once = true,
   threshold = 0.1,
   delay = 0,
-  animation = 'fade'
+  animation = 'fade',
+  children
 }) => {
   const imageRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!containerRef.current || !imageRef.current) return;
+    if (!containerRef.current) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setTimeout(() => {
-              if (imageRef.current) {
+              if (imageRef.current && src) {
                 imageRef.current.src = src;
                 imageRef.current.classList.add('loaded');
               }
@@ -91,12 +93,16 @@ const ImageReveal: React.FC<ImageRevealProps> = ({
         className
       )}
     >
-      <img
-        ref={imageRef}
-        className="lazy-img w-full h-full object-cover"
-        alt={alt}
-        data-src={src}
-      />
+      {children ? (
+        children
+      ) : src ? (
+        <img
+          ref={imageRef}
+          className="lazy-img w-full h-full object-cover"
+          alt={alt}
+          data-src={src}
+        />
+      ) : null}
     </div>
   );
 };
