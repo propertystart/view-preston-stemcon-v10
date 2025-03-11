@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -109,7 +108,7 @@ const Index = () => {
             animation="slide-up"
           />
           <AnimatedText
-            text="Preston VIC 3072"
+            text="3 Arthur Street Preston VIC 3072"
             tag="h2"
             className="text-3xl md:text-4xl font-light text-white tracking-tight mt-3"
             animation="slide-up"
