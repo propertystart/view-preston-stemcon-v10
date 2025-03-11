@@ -18,7 +18,7 @@ type FloorPlanType = {
 };
 
 const FloorPlans: React.FC = () => {
-  const [activePlan, setActivePlan] = useState<number>(0);
+  const [activePlan, setActivePlan] = useState<number | null>(null);
   const [isInView, setIsInView] = useState(false);
   
   // Floor plan data
@@ -116,7 +116,7 @@ const FloorPlans: React.FC = () => {
           {floorPlans.map((plan, index) => (
             <button
               key={plan.id}
-              onClick={() => setActivePlan(index)}
+              onClick={() => setActivePlan(activePlan === index ? null : index)}
               className={`px-5 py-3 transition-colors duration-300 ${
                 activePlan === index
                   ? 'bg-luxury text-white'
@@ -135,72 +135,81 @@ const FloorPlans: React.FC = () => {
           ))}
         </div>
 
+        {/* Message when no plan is selected */}
+        {activePlan === null && (
+          <div className="text-center my-16">
+            <p className="text-gray-800 text-lg">Please select a floor plan to view details.</p>
+          </div>
+        )}
+
         {/* Current Floor Plan Display */}
-        <div className={`transition-opacity duration-500 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="bg-white shadow-md rounded-sm overflow-hidden">
-            <div className="md:flex">
-              {/* Floor Plan Image */}
-              <div className="md:w-3/4">
-                <ImageReveal
-                  src={floorPlans[activePlan].image}
-                  alt={`Floor plan for ${floorPlans[activePlan].title}`}
-                  aspectRatio="aspect-auto"
-                  className="w-full h-full"
-                  animation="fade"
-                />
-              </div>
-              
-              {/* Specifications */}
-              <div className="md:w-1/4 p-6 md:p-8 bg-gray-50">
-                <h3 className="text-2xl font-light text-gray-900 mb-6">
-                  {floorPlans[activePlan].title}
-                </h3>
-                
-                <div className="space-y-4 mb-8">
-                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="text-gray-600">Bedrooms</span>
-                    <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.bedrooms}</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="text-gray-600">Bathrooms</span>
-                    <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.bathrooms}</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="text-gray-600">Car Parks</span>
-                    <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.carpark}</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="text-gray-600">Internal Area</span>
-                    <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.internalArea}</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="text-gray-600">External Area</span>
-                    <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.externalArea}</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Total Area</span>
-                    <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.totalArea}</span>
-                  </div>
+        {activePlan !== null && (
+          <div className={`transition-opacity duration-500 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="bg-white shadow-md rounded-sm overflow-hidden">
+              <div className="md:flex">
+                {/* Floor Plan Image */}
+                <div className="md:w-3/4">
+                  <ImageReveal
+                    src={floorPlans[activePlan].image}
+                    alt={`Floor plan for ${floorPlans[activePlan].title}`}
+                    aspectRatio="aspect-auto"
+                    className="w-full h-full"
+                    animation="fade"
+                  />
                 </div>
                 
-                <div className="mt-auto">
-                  <div className="bg-luxury/10 p-4 rounded-sm">
-                    <h4 className="text-sm font-medium text-luxury">Legend:</h4>
-                    <ul className="text-sm text-gray-600 mt-2 space-y-1">
-                      <li><span className="font-medium">CL</span> - Clothesline</li>
-                      <li><span className="font-medium">D</span> - Dishwasher</li>
-                      <li><span className="font-medium">F</span> - Fridge</li>
-                      <li><span className="font-medium">P</span> - Pantry</li>
-                      <li><span className="font-medium">S</span> - Storage</li>
-                      <li><span className="font-medium">TAP</span> - Outdoor Water Tap</li>
-                      <li><span className="font-medium">WM</span> - Washing Machine</li>
-                    </ul>
+                {/* Specifications */}
+                <div className="md:w-1/4 p-6 md:p-8 bg-gray-50">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6">
+                    {floorPlans[activePlan].title}
+                  </h3>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">Bedrooms</span>
+                      <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.bedrooms}</span>
+                    </div>
+                    <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">Bathrooms</span>
+                      <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.bathrooms}</span>
+                    </div>
+                    <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">Car Parks</span>
+                      <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.carpark}</span>
+                    </div>
+                    <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">Internal Area</span>
+                      <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.internalArea}</span>
+                    </div>
+                    <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">External Area</span>
+                      <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.externalArea}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Total Area</span>
+                      <span className="font-medium text-gray-900">{floorPlans[activePlan].specs.totalArea}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-auto">
+                    <div className="bg-luxury/10 p-4 rounded-sm">
+                      <h4 className="text-sm font-medium text-luxury">Legend:</h4>
+                      <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                        <li><span className="font-medium">CL</span> - Clothesline</li>
+                        <li><span className="font-medium">D</span> - Dishwasher</li>
+                        <li><span className="font-medium">F</span> - Fridge</li>
+                        <li><span className="font-medium">P</span> - Pantry</li>
+                        <li><span className="font-medium">S</span> - Storage</li>
+                        <li><span className="font-medium">TAP</span> - Outdoor Water Tap</li>
+                        <li><span className="font-medium">WM</span> - Washing Machine</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
