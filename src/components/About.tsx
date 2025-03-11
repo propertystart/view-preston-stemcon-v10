@@ -6,8 +6,8 @@ import ImageReveal from './ImageReveal';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto bg-noir">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-        <div className="order-2 md:order-1">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-center">
+        <div className="order-2 md:order-1 md:col-span-5">
           <div className="space-y-6">
             <div className="inline-block">
               <AnimatedText
@@ -61,12 +61,12 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="order-1 md:order-2">
+        <div className="order-1 md:order-2 md:col-span-7">
           <div className="relative">
             <ImageReveal
               src="/lovable-uploads/df78c313-2699-4223-88ed-454d92507606.png"
               alt="Modern apartment living room with balcony view"
-              aspectRatio="aspect-[3/4]"
+              aspectRatio="aspect-[4/3]"
               className="rounded-sm overflow-hidden"
               animation="slide-left"
             />
