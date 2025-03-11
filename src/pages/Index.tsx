@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -115,6 +116,16 @@ const Index = () => {
             delay={100}
           />
           <div className="h-px w-16 bg-noir-gold/30 mx-auto mt-6 mb-6"></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-12">
+          <ImageReveal
+            src="/lovable-uploads/ae9d51c9-f266-45de-b308-9deee500c920.png"
+            alt="Location map of Preston"
+            className="w-full rounded-sm shadow-lg"
+            aspectRatio="aspect-[16/9]"
+            animation="fade"
+          />
         </div>
         
         {/* Amenities Section */}
