@@ -81,12 +81,12 @@ const About: React.FC = () => {
           <div className="relative">
             <ImageReveal
               animation="slide-left"
-              className="rounded-sm overflow-hidden"
+              className="rounded-sm overflow-hidden w-full"
             >
               <ImageCarousel 
                 images={carouselImages}
                 interval={6000}
-                aspectRatio="aspect-[3/4]" // Changed from 4/3 to 3/4 to make images taller
+                aspectRatio="aspect-[16/10]" // Changed to a wider aspect ratio to better fit the grid
                 className="rounded-sm overflow-hidden"
               />
             </ImageReveal>

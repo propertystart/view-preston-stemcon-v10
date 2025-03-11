@@ -16,7 +16,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   images,
   interval = 5000,
   className,
-  aspectRatio = 'aspect-[3/4]', // Changed from 4/3 to 3/4 to make images taller
+  aspectRatio = 'aspect-video', // Changed to aspect-video for better grid fit
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,7 +33,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   if (!images.length) return null;
 
   return (
-    <div className={cn('relative overflow-hidden', aspectRatio, className)}>
+    <div className={cn('relative overflow-hidden rounded-sm', aspectRatio, className)}>
       {images.map((image, index) => (
         <div
           key={index}
