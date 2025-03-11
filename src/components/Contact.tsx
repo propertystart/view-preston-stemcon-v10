@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
           <AnimatedText
             text="For more information about The View Preston, please contact our sales team using the details below or fill out the form."
             tag="p"
-            className="text-gray-600 leading-relaxed mb-8 text-center"
+            className="text-white leading-relaxed mb-8 text-center"
             animation="slide-up"
             delay={200}
           />
