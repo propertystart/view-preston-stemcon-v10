@@ -94,7 +94,7 @@ const Gallery: React.FC = () => {
 
   const filteredItems = activeCategory
     ? galleryItems.filter(item => item.category === activeCategory)
-    : galleryItems;
+    : [];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -171,22 +171,31 @@ const Gallery: React.FC = () => {
           ))}
         </div>
 
+        {/* Message when no category is selected */}
+        {!activeCategory && (
+          <div className="text-center my-16">
+            <p className="text-white text-lg">Please select a category to view images.</p>
+          </div>
+        )}
+
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {filteredItems.map((item, index) => (
-            <div key={item.id} className={`transition-opacity duration-500 ${isInView ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: `${index * 100}ms` }}>
-              <ImageReveal
-                src={item.src}
-                alt={item.alt}
-                aspectRatio="aspect-[4/3]"
-                className="rounded-sm overflow-hidden"
-                animation="fade"
-                delay={index * 100}
-              />
-              <p className="mt-2 text-sm text-gray-400">{item.alt}</p>
-            </div>
-          ))}
-        </div>
+        {activeCategory && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {filteredItems.map((item, index) => (
+              <div key={item.id} className={`transition-opacity duration-500 ${isInView ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: `${index * 100}ms` }}>
+                <ImageReveal
+                  src={item.src}
+                  alt={item.alt}
+                  aspectRatio="aspect-[4/3]"
+                  className="rounded-sm overflow-hidden"
+                  animation="fade"
+                  delay={index * 100}
+                />
+                <p className="mt-2 text-sm text-gray-400">{item.alt}</p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
