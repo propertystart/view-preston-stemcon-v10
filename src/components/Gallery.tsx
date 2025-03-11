@@ -2,18 +2,19 @@
 import React, { useState, useEffect } from 'react';
 import AnimatedText from './AnimatedText';
 import ImageReveal from './ImageReveal';
+import { Tabs, TabsList, TabsTrigger } from './ui/tabs';
 
-type GalleryCategory = 'all' | 'livingrooms' | 'bedrooms' | 'kitchens' | 'bathrooms';
+type GalleryCategory = 'livingrooms' | 'bedrooms' | 'kitchens' | 'bathrooms';
 
 interface GalleryItem {
   id: number;
   src: string;
   alt: string;
-  category: Exclude<GalleryCategory, 'all'>;
+  category: GalleryCategory;
 }
 
 const Gallery: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<GalleryCategory>('all');
+  const [activeCategory, setActiveCategory] = useState<GalleryCategory | null>(null);
   const [isInView, setIsInView] = useState(false);
   
   const galleryItems: GalleryItem[] = [
@@ -91,9 +92,9 @@ const Gallery: React.FC = () => {
     }
   ];
 
-  const filteredItems = activeCategory === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === activeCategory);
+  const filteredItems = activeCategory
+    ? galleryItems.filter(item => item.category === activeCategory)
+    : galleryItems;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -113,6 +114,10 @@ const Gallery: React.FC = () => {
       if (sectionElement) observer.unobserve(sectionElement);
     };
   }, []);
+
+  const toggleCategory = (category: GalleryCategory) => {
+    setActiveCategory(prev => prev === category ? null : category);
+  };
 
   return (
     <section id="gallery" className="py-20 md:py-32 bg-noir-light">
@@ -143,10 +148,10 @@ const Gallery: React.FC = () => {
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
-          {['all', 'livingrooms', 'kitchens', 'bedrooms', 'bathrooms'].map((category) => (
+          {['livingrooms', 'kitchens', 'bedrooms', 'bathrooms'].map((category) => (
             <button
               key={category}
-              onClick={() => setActiveCategory(category as GalleryCategory)}
+              onClick={() => toggleCategory(category as GalleryCategory)}
               className={`px-4 py-2 text-sm transition-colors duration-300 ${
                 activeCategory === category
                   ? 'bg-noir-gold text-noir-dark'
