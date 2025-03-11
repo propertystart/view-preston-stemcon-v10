@@ -86,7 +86,7 @@ const About: React.FC = () => {
               <ImageCarousel 
                 images={carouselImages}
                 interval={6000}
-                aspectRatio="aspect-[4/3]"
+                aspectRatio="aspect-[3/4]" // Changed from 4/3 to 3/4 to make images taller
                 className="rounded-sm overflow-hidden"
               />
             </ImageReveal>

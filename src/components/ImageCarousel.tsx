@@ -16,7 +16,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   images,
   interval = 5000,
   className,
-  aspectRatio = 'aspect-[4/3]',
+  aspectRatio = 'aspect-[3/4]', // Changed from 4/3 to 3/4 to make images taller
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
