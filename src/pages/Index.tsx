@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -116,6 +115,214 @@ const Index = () => {
             delay={100}
           />
           <div className="h-px w-16 bg-noir-gold/30 mx-auto mt-6 mb-6"></div>
+        </div>
+        
+        {/* Amenities Section */}
+        <div className="max-w-4xl mx-auto bg-noir-light shadow-lg rounded-sm overflow-hidden mb-12">
+          <div className="p-8 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              {/* Schools Column */}
+              <div className="space-y-6 reveal reveal-delay-1">
+                <h3 className="text-xl font-medium text-noir-gold border-b border-noir-gold/30 pb-2">SCHOOLS</h3>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex justify-between">
+                    <span>Preston High School</span>
+                    <span className="text-noir-gold">1 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Preston South Primary School</span>
+                    <span className="text-noir-gold">1 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>The Pavilion School</span>
+                    <span className="text-noir-gold">2.2 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>St John's College Preston</span>
+                    <span className="text-noir-gold">200 m</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Preston North East Primary School</span>
+                    <span className="text-noir-gold">3.9 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Sacred Heart Primary School</span>
+                    <span className="text-noir-gold">500 m</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Preston West Primary School</span>
+                    <span className="text-noir-gold">1.2 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Bell Primary School</span>
+                    <span className="text-noir-gold">2.2 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Preston Primary School</span>
+                    <span className="text-noir-gold">2.9 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>St. Raphael's Primary School</span>
+                    <span className="text-noir-gold">1.8 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Gower St Kindergarten</span>
+                    <span className="text-noir-gold">1.9 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Inspire Early Learning Journey Preston</span>
+                    <span className="text-noir-gold">2.1 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Parade College</span>
+                    <span className="text-noir-gold">600 m</span>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Shopping & Medical Column */}
+              <div className="space-y-6">
+                <div className="reveal reveal-delay-2">
+                  <h3 className="text-xl font-medium text-noir-gold border-b border-noir-gold/30 pb-2">SHOPPING</h3>
+                  <ul className="space-y-3 text-gray-300 mt-3">
+                    <li className="flex justify-between">
+                      <span>Northland Shopping Centre</span>
+                      <span className="text-noir-gold">3.4 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston South Shopping Centre</span>
+                      <span className="text-noir-gold">1.4 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston Central</span>
+                      <span className="text-noir-gold">750 m</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston Market</span>
+                      <span className="text-noir-gold">1 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Northland Homemaker Centre</span>
+                      <span className="text-noir-gold">3.3 km</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="reveal reveal-delay-3">
+                  <h3 className="text-xl font-medium text-noir-gold border-b border-noir-gold/30 pb-2">MEDICAL</h3>
+                  <ul className="space-y-3 text-gray-300 mt-3">
+                    <li className="flex justify-between">
+                      <span>High Street Medical & Dental Centre</span>
+                      <span className="text-noir-gold">1.7 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston Family Medical</span>
+                      <span className="text-noir-gold">700 m</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston Market Medical Centre</span>
+                      <span className="text-noir-gold">1.4 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Complete Care Preston</span>
+                      <span className="text-noir-gold">3.4 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Northland Medical Centre</span>
+                      <span className="text-noir-gold">3.5 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston Medical Specialists</span>
+                      <span className="text-noir-gold">2.4 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Murray Road Medical Centre</span>
+                      <span className="text-noir-gold">1.3 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Austin Hospital</span>
+                      <span className="text-noir-gold">5.6 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>John Fawkner Private Hospital</span>
+                      <span className="text-noir-gold">5.4 km</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+              {/* Parks Column */}
+              <div className="space-y-6 reveal reveal-delay-4">
+                <h3 className="text-xl font-medium text-noir-gold border-b border-noir-gold/30 pb-2">PARKS</h3>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex justify-between">
+                    <span>Ray Bramham Gardens</span>
+                    <span className="text-noir-gold">350 m</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>A H Capp Reserve</span>
+                    <span className="text-noir-gold">2.7 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>T.A Cochrane Reserve</span>
+                    <span className="text-noir-gold">1.4 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>W H Robinson Reserve</span>
+                    <span className="text-noir-gold">2.8 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Newman Reserve</span>
+                    <span className="text-noir-gold">1.3 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Preston City Oval</span>
+                    <span className="text-noir-gold">900 m</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>A.G Davis Park Playground</span>
+                    <span className="text-noir-gold">2.2 km</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Walsh Reserve</span>
+                    <span className="text-noir-gold">2.0 km</span>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Points of Interest & Walkability */}
+              <div className="space-y-6">
+                <div className="reveal reveal-delay-5">
+                  <h3 className="text-xl font-medium text-noir-gold border-b border-noir-gold/30 pb-2">POINTS OF INTEREST</h3>
+                  <ul className="space-y-3 text-gray-300 mt-3">
+                    <li className="flex justify-between">
+                      <span>Preston Library</span>
+                      <span className="text-noir-gold">1.6 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Preston Station</span>
+                      <span className="text-noir-gold">1.2 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>East Preston Community Centre</span>
+                      <span className="text-noir-gold">4.0 km</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>Darebin Arts Centre</span>
+                      <span className="text-noir-gold">300 m</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-noir-gold/10 p-6 rounded-sm mt-6 border border-noir-gold/20 reveal reveal-delay-6">
+                  <h3 className="text-xl font-medium text-white mb-2">Walkability Score: <span className="text-noir-gold">91</span></h3>
+                  <p className="text-gray-300">Most daily errands can be done without a car</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="max-w-4xl mx-auto bg-noir-light shadow-lg rounded-sm overflow-hidden">
