@@ -19,8 +19,8 @@ const About: React.FC = () => {
       alt: "Balcony with outdoor dining and city skyline view"
     },
     {
-      src: "/lovable-uploads/efe73991-b418-4a81-9537-c039e7c9a0b9.png",
-      alt: "Luxury bathroom with stone finishes and glass shower"
+      src: "/lovable-uploads/d67fd7e3-4384-43bb-a506-eb1699efff92.png",
+      alt: "Luxury bathroom with stone tile walls and double vanity"
     },
     {
       src: "/lovable-uploads/76931db2-ace5-4166-9ecc-bfccc779c634.png",
