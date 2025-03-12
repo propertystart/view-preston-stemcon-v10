@@ -7,8 +7,8 @@ import ImageCarousel from './ImageCarousel';
 const About: React.FC = () => {
   const carouselImages = [
     {
-      src: "/lovable-uploads/df78c313-2699-4223-88ed-454d92507606.png",
-      alt: "Modern apartment living room with balcony view"
+      src: "/lovable-uploads/6ec63079-ca6a-49ca-9fe4-17209d83f9d4.png",
+      alt: "Modern apartment living room with green sofa and open plan kitchen"
     },
     {
       src: "/lovable-uploads/7dfda104-d232-43a8-bfbd-429458b07f63.png",
