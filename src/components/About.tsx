@@ -17,6 +17,14 @@ const About: React.FC = () => {
     {
       src: "/lovable-uploads/27e1b090-8277-4a4d-bb22-1a29a0d42a39.png",
       alt: "Balcony with outdoor dining and city skyline view"
+    },
+    {
+      src: "/lovable-uploads/efe73991-b418-4a81-9537-c039e7c9a0b9.png",
+      alt: "Luxury bathroom with stone finishes and glass shower"
+    },
+    {
+      src: "/lovable-uploads/76931db2-ace5-4166-9ecc-bfccc779c634.png",
+      alt: "Modern bedroom with mirrored wardrobe and balcony access"
     }
   ];
 
