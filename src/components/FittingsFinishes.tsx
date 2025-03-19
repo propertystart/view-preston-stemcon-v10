@@ -131,11 +131,11 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Bathroom, Ensuite</h3>
                   </div>
                   
-                  {/* Replacing the detailed specifications with the new image */}
+                  {/* Replacing the image with the new one */}
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/ca40ad0e-ef11-4634-8266-0b2a0b799f05.png" 
+                        src="/lovable-uploads/d4f81801-ce56-43c3-bdde-5fc6ff09c9f5.png" 
                         alt="Bathroom and Ensuite Specifications"
                         className="w-full"
                         aspectRatio="aspect-auto"
@@ -298,3 +298,4 @@ const FittingsFinishes: React.FC = () => {
 };
 
 export default FittingsFinishes;
+
