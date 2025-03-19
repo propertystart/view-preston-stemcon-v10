@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import AnimatedText from './AnimatedText';
 import { cn } from '@/lib/utils';
@@ -84,14 +83,12 @@ const FittingsFinishes: React.FC = () => {
             </TabsList>
           </div>
 
-          {/* Message when no tab is selected */}
           {!activeTab && (
             <div className="text-center my-16">
               <p className="text-white text-lg">Please select a category to view specifications and images.</p>
             </div>
           )}
 
-          {/* Kitchen Tab */}
           {activeTab === 'kitchen' && (
             <TabsContent value="kitchen" className="mt-4">
               <div className="bg-noir-dark rounded-sm shadow-md overflow-hidden border border-noir-gold/20">
@@ -101,11 +98,10 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Kitchen, Island Bench, Pantry</h3>
                   </div>
                   
-                  {/* Detailed Kitchen Image - REPLACED WITH NEW IMAGE */}
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/cc1fb6b3-d04c-48a8-9aa8-ebf3dccef397.png" 
+                        src="/lovable-uploads/286aa859-02bc-4ccc-8c9f-710bfc800206.png" 
                         alt="Kitchen, Island Bench, Pantry Specifications"
                         className="w-full"
                         aspectRatio="aspect-auto"
@@ -121,7 +117,6 @@ const FittingsFinishes: React.FC = () => {
             </TabsContent>
           )}
 
-          {/* Bathroom Tab */}
           {activeTab === 'bathroom' && (
             <TabsContent value="bathroom" className="mt-4">
               <div className="bg-noir-dark rounded-sm shadow-md overflow-hidden border border-noir-gold/20">
@@ -131,7 +126,6 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Bathroom, Ensuite</h3>
                   </div>
                   
-                  {/* Replacing the image with the new one */}
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
@@ -151,7 +145,6 @@ const FittingsFinishes: React.FC = () => {
             </TabsContent>
           )}
 
-          {/* Living Tab - REPLACING WITH NEW IMAGE */}
           {activeTab === 'living' && (
             <TabsContent value="living" className="mt-4">
               <div className="bg-noir-dark rounded-sm shadow-md overflow-hidden border border-noir-gold/20">
@@ -161,7 +154,6 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Living / Bedroom</h3>
                   </div>
                   
-                  {/* Replacing with the new image */}
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
@@ -181,7 +173,6 @@ const FittingsFinishes: React.FC = () => {
             </TabsContent>
           )}
 
-          {/* Laundry Tab */}
           {activeTab === 'laundry' && (
             <TabsContent value="laundry" className="mt-4">
               <div className="bg-noir-dark rounded-sm shadow-md overflow-hidden border border-noir-gold/20">
@@ -191,7 +182,6 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Laundry / External</h3>
                   </div>
                   
-                  {/* Replacing with the new image and content */}
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
