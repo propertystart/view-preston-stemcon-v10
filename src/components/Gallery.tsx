@@ -74,8 +74,8 @@ const Gallery: React.FC = () => {
     },
     {
       id: 10,
-      src: "/lovable-uploads/b24b1501-d71d-4eac-aae3-ed10d3553e15.png",
-      alt: "Minimalist galley kitchen with white countertops and gas cooktop",
+      src: "/lovable-uploads/27c12c8d-2bce-4e92-af94-8acebd4da90e.png",
+      alt: "Contemporary galley kitchen with timber cabinetry and integrated appliances",
       category: "kitchens"
     },
     {
