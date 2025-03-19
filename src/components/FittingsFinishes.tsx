@@ -131,57 +131,19 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Bathroom, Ensuite</h3>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Basin / Benchtop */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Basin / Benchtop</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Round Ceramic</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          White ceramic above counter round basin<br />
-                          Finish: Ceramic
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Basin Mixer */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Basin Mixer</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Tall Bench-Mount</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Bench-mount basin mixer to all vanities<br />
-                          Finish: Black
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Toilet Suite */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Toilet Suite</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Toilet Pan w/ In-wall Cistern</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Ceramic toilet pan & in-wall cistern with chrome button/plate<br />
-                          Finish: Ceramic/Chrome
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Detailed Bathroom Image */}
-                  <div className="mt-12">
+                  {/* Replacing the detailed specifications with the new image */}
+                  <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/552a1a19-da65-4726-ae0c-6b9ea58bb760.png" 
-                        alt="Detailed Bathroom Specifications"
+                        src="/lovable-uploads/ca40ad0e-ef11-4634-8266-0b2a0b799f05.png" 
+                        alt="Bathroom and Ensuite Specifications"
                         className="w-full"
-                        aspectRatio="aspect-[2/1]"
+                        aspectRatio="aspect-auto"
                         animation="fade"
                       />
                     </div>
                     <p className="text-xs text-center text-gray-400 mt-2">
-                      Detailed bathroom and ensuite specifications and finishes
+                      Items and descriptions shown are for theme and illustration purpose only. The developer reserves the right to make changes or substitute with alternatives should it be needed.
                     </p>
                   </div>
                 </div>
