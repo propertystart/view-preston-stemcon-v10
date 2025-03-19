@@ -151,7 +151,7 @@ const FittingsFinishes: React.FC = () => {
             </TabsContent>
           )}
 
-          {/* Living Tab */}
+          {/* Living Tab - REPLACING WITH NEW IMAGE */}
           {activeTab === 'living' && (
             <TabsContent value="living" className="mt-4">
               <div className="bg-noir-dark rounded-sm shadow-md overflow-hidden border border-noir-gold/20">
@@ -161,57 +161,19 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Living / Bedroom</h3>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Timber Floor */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Timber Floor (Living)</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Engineered Timber</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Floating engineered oak timber floorboards w/ underlay<br />
-                          Finish: Oak Timber
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Carpet Floor */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Carpet Floor (Bedroom)</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Plush/Textured</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Fire compliant carpet finish in grey colour w/ underlay<br />
-                          Finish: Plush / Textured
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Robe Doors */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Robe Doors</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Mirror Sliding Door</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Black frame with top/bottom sliding tracks and side jambs<br />
-                          Finish: Mirror Finish / Black
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Detailed Living & Bedroom Image */}
-                  <div className="mt-12">
+                  {/* Replacing with the new image */}
+                  <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/d8f79b2f-2b7e-42ed-88e0-ad294196139e.png" 
-                        alt="Detailed Living & Bedroom Specifications"
+                        src="/lovable-uploads/5c1daee2-6a12-4111-9fff-302c8288a89d.png" 
+                        alt="Living and Bedroom Specifications"
                         className="w-full"
-                        aspectRatio="aspect-[2/1]"
+                        aspectRatio="aspect-auto"
                         animation="fade"
                       />
                     </div>
                     <p className="text-xs text-center text-gray-400 mt-2">
-                      Detailed living and bedroom specifications and finishes
+                      Items and descriptions shown are for theme and illustration purpose only. The developer reserves the right to make changes or substitute with alternatives should it be needed.
                     </p>
                   </div>
                 </div>
@@ -298,4 +260,3 @@ const FittingsFinishes: React.FC = () => {
 };
 
 export default FittingsFinishes;
-
