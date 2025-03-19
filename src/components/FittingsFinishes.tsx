@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import AnimatedText from './AnimatedText';
 import { cn } from '@/lib/utils';
@@ -129,7 +130,7 @@ const FittingsFinishes: React.FC = () => {
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/d4f81801-ce56-43c3-bdde-5fc6ff09c9f5.png" 
+                        src="/lovable-uploads/cc52c51a-138e-4bd9-a690-8569de491373.png" 
                         alt="Bathroom and Ensuite Specifications"
                         className="w-full"
                         aspectRatio="aspect-auto"
