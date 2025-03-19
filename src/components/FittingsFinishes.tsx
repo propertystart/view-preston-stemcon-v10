@@ -186,7 +186,7 @@ const FittingsFinishes: React.FC = () => {
                   <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/ee3a2d93-d239-4c4c-afb9-15cabd243b7a.png" 
+                        src="/lovable-uploads/c646da55-588f-43dd-acf0-2b79aa63ae13.png" 
                         alt="Laundry and External Specifications"
                         className="w-full"
                         aspectRatio="aspect-auto"
