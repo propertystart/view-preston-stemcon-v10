@@ -191,57 +191,19 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Laundry / External</h3>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Laundry Trough */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Laundry Trough Cabinet</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Drop-in Type</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Drop-in type stainless steel laundry trough w/ tap hole<br />
-                          Finish: Stainless Steel
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Laundry Mixer */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Laundry Mixer</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Swivel Laundry Faucet</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Standard laundry faucet swivel type<br />
-                          Finish: Chrome
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Window */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Window</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Double Glazing</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Aluminium extrusions double-glazing window system<br />
-                          Finish: Powdercoat / Glazing
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Detailed Laundry & External Image */}
-                  <div className="mt-12">
+                  {/* Replacing with the new image and content */}
+                  <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/cb85fd16-8c63-4b3c-8f5b-6c46c41aea96.png" 
-                        alt="Detailed Laundry & External Specifications"
+                        src="/lovable-uploads/ee3a2d93-d239-4c4c-afb9-15cabd243b7a.png" 
+                        alt="Laundry and External Specifications"
                         className="w-full"
-                        aspectRatio="aspect-[2/1]"
+                        aspectRatio="aspect-auto"
                         animation="fade"
                       />
                     </div>
                     <p className="text-xs text-center text-gray-400 mt-2">
-                      Detailed laundry and external specifications and finishes
+                      Items and descriptions shown are for theme and illustration purpose only. The developer reserves the right to make changes or substitute with alternatives should it be needed.
                     </p>
                   </div>
                 </div>
