@@ -101,82 +101,19 @@ const FittingsFinishes: React.FC = () => {
                     <h3 className="text-2xl font-medium text-white">Kitchen, Island Bench, Pantry</h3>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Appliances */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Appliances</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Premium Quality Appliances Set</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Next generation appliances offering cutting edge, energy efficiency and multi-cooking
-                          technology. The appliances are designed to enhance cooking performance perfectly combining
-                          innovative design and premium performance for all your cooking and cleaning needs.
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Kitchen Sink */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Kitchen Sink</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Undermount Sink</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          700mm (nom.) 1 & 1/2 or double bowl Undermount Sink<br />
-                          Finish: Brushed Gold
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Kitchen Mixer */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Kitchen Mixer</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Tall Sink Mixer</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Tall kitchen mixer fit for kitchen sink<br />
-                          Finish: Black
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Benchtop & Splashback */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Benchtop & Splashback</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">Reconstituted Stone</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          20mm (nom.) thick reconstituted stone in light colour<br />
-                          Finish: Smooth
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Feature Light */}
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="text-lg font-medium text-white">Feature Light</h4>
-                        <p className="text-sm font-semibold uppercase text-noir-gold mt-1">LED Strip Lighting</p>
-                        <p className="text-sm text-gray-300 mt-1">
-                          Featured LED strip lighting under O/H cabinets<br />
-                          Finish: Per Light fitting
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Detailed Kitchen Image */}
-                  <div className="mt-12">
+                  {/* Detailed Kitchen Image - REPLACED WITH NEW IMAGE */}
+                  <div className="mt-2 mb-8">
                     <div className="border border-noir-gold/30 rounded-md overflow-hidden">
                       <ImageReveal 
-                        src="/lovable-uploads/d3feac66-49b1-4345-8401-0a6f91519e8b.png" 
-                        alt="Detailed Kitchen Specifications"
+                        src="/lovable-uploads/cc1fb6b3-d04c-48a8-9aa8-ebf3dccef397.png" 
+                        alt="Kitchen, Island Bench, Pantry Specifications"
                         className="w-full"
-                        aspectRatio="aspect-[2/1]"
+                        aspectRatio="aspect-auto"
                         animation="fade"
                       />
                     </div>
                     <p className="text-xs text-center text-gray-400 mt-2">
-                      Detailed kitchen specifications and finishes
+                      Items and descriptions shown are for theme and illustration purpose only. The developer reserves the right to make changes or substitute with alternatives should it be needed.
                     </p>
                   </div>
                 </div>
