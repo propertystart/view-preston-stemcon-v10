@@ -28,7 +28,7 @@ const DepreciationSchedule: React.FC = () => {
         <div className="bg-noir-light p-6 rounded-sm shadow-lg">
           <h3 className="text-xl font-medium text-noir-gold mb-4 text-center">Example of First Year Deductions</h3>
           <ImageReveal
-            src="/lovable-uploads/7845024b-26a8-4238-8b87-c297fb6fb0dc.png"
+            src="/lovable-uploads/39fd71f1-ebff-47b8-9f31-c165b5e3a64d.png"
             alt="Example of first year deductions in kitchen"
             className="w-full rounded-sm shadow-inner"
             aspectRatio="aspect-[16/9]"
