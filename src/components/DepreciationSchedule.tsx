@@ -24,16 +24,12 @@ const DepreciationSchedule: React.FC = () => {
       </div>
       
       <div className="space-y-12 max-w-4xl mx-auto">
-        {/* First Year Deductions Example */}
+        {/* First Year Deductions Example - Removed image */}
         <div className="bg-noir-light p-6 rounded-sm shadow-lg">
           <h3 className="text-xl font-medium text-noir-gold mb-4 text-center">Example of First Year Deductions</h3>
-          <ImageReveal
-            src="/lovable-uploads/39fd71f1-ebff-47b8-9f31-c165b5e3a64d.png"
-            alt="Example of first year deductions in kitchen"
-            className="w-full rounded-sm shadow-inner"
-            aspectRatio="aspect-[16/9]"
-            animation="slide-up"
-          />
+          <div className="text-gray-300 p-4 text-center">
+            Property investors can claim significant tax deductions in the first year of ownership.
+          </div>
         </div>
         
         {/* Concept of Depreciation */}
