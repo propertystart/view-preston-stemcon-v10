@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -9,6 +10,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ImageReveal from '@/components/ImageReveal';
 import AnimatedText from '@/components/AnimatedText';
+import DepreciationSchedule from '@/components/DepreciationSchedule';
 
 const Index = () => {
   // Smooth scroll to sections when clicking on navigation links
@@ -427,6 +429,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Add Depreciation Schedule section */}
+      <DepreciationSchedule />
       
       <Contact />
       <Footer />
